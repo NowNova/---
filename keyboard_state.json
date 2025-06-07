@@ -1,0 +1,27 @@
+{
+  "a": {
+    "type": "PrintCharCommand",
+    "_char": "a"
+  },
+  "b": {
+    "type": "PrintCharCommand",
+    "_char": "b"
+  },
+  "c": {
+    "type": "PrintCharCommand",
+    "_char": "c"
+  },
+  "d": {
+    "type": "PrintCharCommand",
+    "_char": "d"
+  },
+  "ctrl++": {
+    "type": "VolumeUpCommand"
+  },
+  "ctrl+-": {
+    "type": "VolumeDownCommand"
+  },
+  "ctrl+p": {
+    "type": "MediaPlayerCommand"
+  }
+}
