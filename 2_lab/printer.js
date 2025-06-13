@@ -17,12 +17,12 @@ class Printer {
 
     print(text) {
         const fontData = this.font;
-        const lines = [];
-        
-        for (let i = 0; i < 5; i++) {
-            lines.push('');
-        }
+        // Определяем высоту символов по первому попавшемуся символу
+        const sampleChar = text.toUpperCase()[0] || ' ';
+        const charHeight = fontData[sampleChar] ? fontData[sampleChar].length : 0;
 
+        const lines = Array(charHeight).fill('');
+        
         for (const char of text.toUpperCase()) {
             const charPattern = fontData[char] || fontData[' '];
             
@@ -48,10 +48,10 @@ class Printer {
     }
     
     static createContext(color, position, symbol, font = 'block') {
-    return {
-        printer: new Printer(color, position, symbol, font)
-    };
-}
+        return {
+            printer: new Printer(color, position, symbol, font)
+        };
+    }
 }
 
 module.exports = Printer;

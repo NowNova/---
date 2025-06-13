@@ -6,9 +6,9 @@ function demo() {
     console.clear();
 
     try {
-        Printer.print('ABC', Color.RED, { x: 5, y: 2 }, '#', 'block');
-        Printer.print('HELLO', Color.GREEN, { x: 20, y: 10 }, '@', 'block');
-        Printer.print('WORLD', Color.CYAN, { x: 20, y: 16 }, '+', 'block');
+        Printer.print('A B C', Color.RED, { x: 5, y: 2 }, '#', 'block');
+        Printer.print('H E L L O', Color.GREEN, { x: 20, y: 16 }, '@', 'block');
+        Printer.print('W O R L D', Color.CYAN, { x: 75, y: 16 }, '+', 'block');
 
 
         const context = Printer.createContext(Color.CYAN, { x: 40, y: 5 }, '$', 'block');
